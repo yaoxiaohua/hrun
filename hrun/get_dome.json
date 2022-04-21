@@ -1,0 +1,37 @@
+[
+    {
+        "config": {
+            "name": "testcase description",
+            "variables": {}
+        }
+    },
+    {
+        "test": {
+            "name": "/content-search.xml",
+            "request": {
+                "url": "https://www.baidu.com/content-search.xml",
+                "method": "GET",
+                "headers": {
+                    "Sec-Fetch-Site": "same-origin",
+                    "Sec-Fetch-Mode": "no-cors",
+                    "Sec-Fetch-Dest": "empty",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36 HBPC/12.0.0.300"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "application/xml"
+                    ]
+                }
+            ]
+        }
+    }
+]

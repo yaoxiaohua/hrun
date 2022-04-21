@@ -1,0 +1,13 @@
+
+
+- key1: value1
+- key2:
+  - 1
+  - 2
+  - 3
+- key3: [1,2,3,4]
+- 'hollow'
+- 123
+- null
+- true
+- !!str true
