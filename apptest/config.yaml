@@ -1,0 +1,26 @@
+
+#基础配置
+get_a_s:
+  - wx1f68363750c2506d                  #appid
+  - 86d19943aefe2ca1ea336177c9eeb796    #secret
+
+#微博热搜认证
+get_weibo:
+  - 49fa1a5b47ffa009419815c6ed689100    #access-key
+  - aec71f359f40ca6228bc9a93f09efdcb    #secret-key
+
+#天气获取地址
+get_weather:
+  - https://v0.yiketianqi.com/api?unescape=1&version=v91&appid=49354423&appsecret=Raw6Kk31&ext=&cityid=101210102
+
+#消息模板
+send_msg:
+  touser:
+    - ogBah6reWC8SuQgmklMR_WmE17wA
+#    - ogBah6kTZCn9Pg_RuDVLsGlWpWsY
+  template_id: 1zIGTP--pp5My2e1gfWXf7M8E3MWaEHiYW3Hc2uJvsc
+  url: 'https://s.weibo.com/top/summary?cate=realtimehot'
+  data:
+    first:
+      value: value
+      color: '#17317'
